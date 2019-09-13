@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <!--
+        
+    The first three lines of code are different text boxes that you can input text into such as, address, postal code, city, etc.
+
+        
+    -->
+
+    <form method=" get">
+        <label for="Address">Address:</label>
+        <input type="text" name="address" placeholder="Please enter your address" size="30" maxlength="20" id="address" />
+
+        <label for="Postal Code">Postal Code:</label>
+        <input type="text" name="postalcode" placeholder="Please enter your postal code" size="30" maxlength="20" id="postalcode"/>
+
+        <label for="City">City:</label>
+        <input type="text" name="city" placeholder="Please enter your city name" size="30" maxlength="100" id="city"/>
+
+        <p><i>Please</i> <strike>choose</strike> a <b>shipping method.</b></p>
+
+        <select name="shipping" id="shipping">
+            <option value="standard">Standard Shipping</option>
+            <option value="two-day">Two-Day Shipping</option>
+            <option value="one-day">One-Day Shipping</option>
+        </select>
+       
+        <p>Please select a payment method.</p>
+
+        <label> <input type="radio" name="payment" value="paypal" checked/> PayPal </label>
+        <label> <input type="radio" name="payment" value="debitcard"/> DebitCard </label>
+        <label> <input type="radio" name="payment" value="creditcard"/> CreditCard </label></br>
+
+        <textarea rows="4" cols="40" name="comments" id="comments"> This Area Is For Comments Only </textarea></br>
+
+        <label> <input type="checkbox" name="password" /> Sign me up for e-mail updates</label>
+        <label> <input type="checkbox" name="password" /> Save my payment information</label>
+
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html>
